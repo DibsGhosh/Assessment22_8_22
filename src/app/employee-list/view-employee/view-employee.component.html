@@ -1,0 +1,41 @@
+<div class="container row mx-auto">
+    <h1 class="col-md-12 text-center">
+      Employee Details
+    </h1>
+    <section class="col-md-4 paddingL">
+      <label for="">First Name: &nbsp;</label> <span>{{employee.FirstName}}</span>
+    </section>
+    <section class="col-md-4 paddingL">
+      <label for="">Middle Name:&nbsp; </label>
+      <span *ngIf="employee.MiddleName === ''">N/A</span>
+      <span *ngIf="employee.MiddleName !== ''">{{employee.MiddleName}}</span>
+    </section>
+    <section class="col-md-4 paddingL">
+      <label for="">Last Name: &nbsp;</label><span>{{employee.LastName}}</span>
+    </section>
+    <section class="col-md-4 paddingL">
+      <label for="">Date Of Birth: &nbsp;</label><span>{{employee.DateOfBirth}}</span>
+    </section>
+    <section class="col-md-4 paddingL">
+        <label for="">Gender:&nbsp; </label><span>{{employee.Gender}}</span>
+    </section>    
+    <section class="col-md-4 paddingL">
+      <label for="">Email ID:&nbsp; </label><span>{{employee.emailId}}</span>
+    </section>
+    <section class="col-md-4 paddingL">
+      <label for="">Address:&nbsp;</label><span>{{employee.Address}}</span>
+    </section>
+    <section class="col-md-4 paddingL">
+      <label for="">Contact Number: &nbsp;</label><span>{{employee.contactnumber}}</span>
+    </section>
+    <section class="col-md-4 paddingL">
+      <label for="">Pincode: &nbsp;</label><span>{{employee.Pincode}}</span>
+    </section>
+
+    <section class="col-md-12 text-center paddingR">
+      <label for="">Employee Type: &nbsp;</label><span>{{employee.EmployeeType}}</span>
+    </section>
+    <section class="col-md-12 text-center">
+      <button mat-raised-button color="primary" (click)="routeBack()" class="">Go to Employee</button>
+    </section>
+  </div>
